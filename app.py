@@ -29,6 +29,7 @@ if not api_key:
     # If using Streamlit secrets (uncomment this):
     # api_key = st.secrets.get("GROQ_API_KEY", "")
 
+## raise error if api key not provided
 if not api_key:
     st.error("Please provide a Groq API key in the sidebar or set it as an environment variable.")
     st.stop()
